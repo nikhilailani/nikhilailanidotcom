@@ -3,6 +3,7 @@ import Blog from "./components/homepage/blog";
 import Education from "./components/homepage/education";
 import Experience from "./components/homepage/experience";
 import HeroSection from "./components/homepage/hero-section";
+import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
 
   return (
@@ -13,6 +14,7 @@ import Skills from "./components/homepage/skills";
       <Skills />
       <Education />
       <Blog blogs={blogs} />
+      <Projects />
     </>
   )
 };
