@@ -12,9 +12,9 @@ import Skills from "./components/homepage/skills";
       <AboutSection />
       <Experience />
       <Skills />
+      <Projects />
       <Education />
       <Blog blogs={blogs} />
-      <Projects />
     </>
   )
 };
