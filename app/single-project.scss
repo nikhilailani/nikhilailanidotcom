@@ -3,7 +3,7 @@
   @apply w-[304px] h-[360px] flex flex-col items-center justify-center relative cursor-pointer overflow-hidden px-8 py-[1.4rem];
 
   &:hover {
-    img {
+    .cover-image {
       @apply opacity-0;
     }
 
@@ -16,7 +16,7 @@
     }
 
     .project--desc {
-      @apply translate-x-[-2%] translate-y-[40%];
+      @apply translate-x-[-2%] translate-y-[50%];
     }
 
     .project--lang {

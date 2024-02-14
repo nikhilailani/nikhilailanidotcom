@@ -14,31 +14,29 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="flex justify-center my-5 lg:py-8">
-        <div className="flex  items-center">
-          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Projects
-          </span>
-          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+      <div className="pt-24">
+        <div className="flex flex-col gap-6">
+          {projectsData.slice(0, 4).map((project, index) => (
+            <div
+              id={`sticky-card-${index + 1}`}
+              key={index}
+              className="sticky-card w-full mx-auto max-w-2xl sticky"
+            >
+              <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
+                <SingleProject
+                  id={project.id}
+                  name={project.projectName}
+                  desc={project.projectDesc}
+                  tags={project.tags}
+                  code={project.code}
+                  demo={project.demo}
+                  image={project.image}
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-
-      <div className="grid grid-cols-3 gap-4 py-8">
-        {projectsData.slice(0, 3).map(project => (
-          <SingleProject
-            key={project.id}
-            id={project.id}
-            name={project.projectName}
-            desc={project.projectDesc}
-            tags={project.tags}
-            code={project.code}
-            demo={project.demo}
-            image={project.image}
-          />
-        ))}
-      </div>
-
     </div>
   );
 };
