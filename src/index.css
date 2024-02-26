@@ -3,17 +3,17 @@
 @import 'tailwindcss/utilities';
 
 .heroPicShadow {
-    box-shadow: 1rem 1rem 0px 0px #4831d4, -1rem -1rem 0px 0px #ccf381;
+    box-shadow: 1rem 1rem 0px 0px #0f0f0f, -1rem -1rem 0px 0px #0f0f0f;
 }
 
 .button_slide {
-    color: var(--blue);
-    border: 2px solid var(--blue);
+    color: var(--black);
+    border: 2px solid var(--black);
     border-radius: 0px;
     
     display: inline-block;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 var(--blue);
+    box-shadow: inset 0 0 0 0 var(--black);
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
@@ -25,7 +25,7 @@
 
 .slide_right:hover {
     box-shadow: inset 300px 0 0 0 var(--blue);
-    color: var(--green);
+    color: var(--black);
 }
 
 .slide_left:hover {
@@ -36,6 +36,33 @@
     box-shadow: inset 400px 50px 0 0 #D80286;
 }
 
+.navbar-logo {
+    max-width: 100px; 
+}
+
+.menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.bm-menu {
+    background-color: #fff; 
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+.bm-item {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.bm-item:hover {
+    color: #000;
+}  
+
 #outer {
     width: 364px;
     margin: 50px auto 0 auto;
@@ -43,6 +70,7 @@
 }
 
 :root {
+    --black: #000000;
     --blue: #4831d4;
     --green: #ccf381;
 }

@@ -24,7 +24,7 @@ export default function Section2() {
                     {/* <SvgBackground /> */}
                     <h1 className={`${styles.h1} text-[${styles.blue}]`}>Developer</h1>
                     <p className={`${styles.para}`}>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis nostrum libero minima, natus eum reiciendis magnam iste architecto sequi veritatis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, numquam!
+                        Nikhil Ailani ipsum dolor, sit amet consectetur adipisicing elit. Facilis nostrum libero minima, natus eum reiciendis magnam iste architecto sequi veritatis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, numquam!
                     </p>
                 </div>
             </div>

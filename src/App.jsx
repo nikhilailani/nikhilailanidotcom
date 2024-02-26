@@ -2,7 +2,7 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Profile from './components/Profile';
 import Section2 from './components/Section2';
 import Section3 from './components/Section3';
 import Section4 from './components/Section4';
@@ -31,7 +31,7 @@ function App() {
               exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 1 }}
             >
-              <Hero />
+              <Profile />
             </motion.div>
           )}
         </InView>
