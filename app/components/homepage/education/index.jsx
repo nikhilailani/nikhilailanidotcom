@@ -1,10 +1,10 @@
 // @flow strict
+
 import { educations } from "@/utils/data/educations";
-import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
-import lottieFile from '../../../assets/lottie/study.json';
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
+import lottieFile from '/public/lottie/study.json';
 
 function Education() {
   return (
@@ -45,7 +45,7 @@ function Education() {
               {
                 educations.map(education => (
                   <GlowCard key={education.id} identifier={`education-${education.id}`}>
-                    <div className="p-3 relative text-white">
+                    <div className="p-3 relative">
                       <Image
                         src="/blur-23.svg"
                         alt="Hero"
@@ -63,7 +63,7 @@ function Education() {
                           <BsPersonWorkspace size={36} />
                         </div>
                         <div>
-                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
+                          <p className="text-base sm:text-xl mb-2 font-medium  uppercase">
                             {education.title}
                           </p>
                           <p className="text-sm sm:text-base">{education.institution}</p>
