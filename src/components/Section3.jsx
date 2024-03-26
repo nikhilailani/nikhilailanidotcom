@@ -4,7 +4,7 @@ import experince from '../assets/experience.svg'
 
 export default function Section3() {
     return (
-        <div className={`${styles.container} bg-[${styles.blue}] text-[${styles.green}]`}>
+        <div className={`${styles.container} bg-[black] text-[${styles.green}]`}>
             <div className={`left md:w-[50%] w-full flex items-center`} >
                 <div className={`innerLeft ${styles.innerCont}`}>
                     <h1 className={`${styles.h1} py-10`}>

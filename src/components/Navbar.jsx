@@ -1,23 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
-import logoipsum from '../assets/logo-ipsum.svg';
+import logo from '../assets/Nik_logo-transformed.webp';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import Sidebar from './Sidebar';
 
 export default function Navbar() {
-    const [menuOpen, setMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
-
     return (
         <div className='flex flex-row justify-between'>
             <div>
-                <img src={logoipsum} alt="" className="navbar-logo" />
+                <img src={logo} alt="" className='w-[6%] md:w-[7%] lg:w-[8%]' />
             </div>
-            <HiOutlineMenuAlt3 className="menu-icon" onClick={toggleMenu} />
-            <Sidebar></Sidebar>
+            <HiOutlineMenuAlt3 className=' text-4xl  md:text-5xl' />
         </div>
     )
 }
