@@ -3,7 +3,7 @@
 import { personalData } from "@/utils/data/personal-data";
 import BlogCard from "../components/homepage/blog/blog-card";
 
-async function getBlogs() {
+async function getData() {
   const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
 
   if (!res.ok) {
@@ -11,11 +11,14 @@ async function getBlogs() {
   }
 
   const data = await res.json();
-  return data;
+
+  const filtered = data.filter((item) => item?.cover_image).sort(() => Math.random() - 0.5);
+
+  return filtered;
 };
 
 async function page() {
-  const blogs = await getBlogs();
+  const blogs = await getData();
 
   return (
     <div className="py-8">
