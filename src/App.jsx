@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
 import Navbar from './components/Navbar';
 import ProfilePicture from './components/ProfilePicture';
-import Section2 from './components/Section2';
+import Education from './components/Education';
 import Section3 from './components/Section3';
 import Section4 from './components/Section4';
 import Contact from './components/Contact';
@@ -11,7 +11,6 @@ import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 
 function App() {
-
   const [open, setOpen] = React.useState(false);
   return (
     <div className='h-full max-w-[1500px] mx-auto relative overflow-hidden'>
@@ -45,7 +44,7 @@ function App() {
               exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 1 }}
             >
-              <Section2 />
+              <Education />
             </motion.div>
           )}
         </InView>

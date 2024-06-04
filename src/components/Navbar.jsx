@@ -1,6 +1,6 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
-import logo from '../assets/niklogotransparent.webp';
+import logo from '../assets/niklogotransparent.png';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 export default function Navbar() {
