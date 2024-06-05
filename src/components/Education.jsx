@@ -4,7 +4,7 @@ import '.././index.css';
 
 export default function Education() {
     return (
-        <div className={`${styles.container} relative bg-[whitesmoke]`}>
+        <div className={`${styles.container} relative`}>
             {/* innerleft container */}
             <div className="left w-full my-0 min-h-fit flex items-center">
                 <div className={`innerLeft mt-16 ${styles.innerCont} relative z-50`}>

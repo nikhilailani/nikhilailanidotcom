@@ -5,7 +5,7 @@
 
 
 body {
-    background-color: #cdf0ff;
+    background-color: whitesmoke;
 }
 
 .tag_line {
@@ -78,23 +78,4 @@ body {
 .bg-repeat {
     background-image: url('./assets/bg.svg');
     background-repeat: repeat;
-}
-
-.image-mask {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.image-mask img {
-    width: 100%;
-    height: auto;
-    -webkit-mask-image: url('path-to-your-mask.png'); /* Path to your PNG mask */
-    mask-image: url('path-to-your-mask.png'); /* Path to your PNG mask */
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    mask-position: center;
 }
