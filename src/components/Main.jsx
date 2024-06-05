@@ -13,7 +13,7 @@ export default function ProfilePicture() {
                     <h1 className={`${styles.h1} text-7xl`}> Nikhil Ailani </h1>
                     <h1
                         className={`${styles.h1} text-[#004764]`}>Data Analyst<span className='cursor'></span></h1>
-                    <p className='tag_line text-sm md:text-base py-6 md:py-12 w-full '>
+                    <p className='tag_line text-lg md:text-base py-6 md:py-12 w-full '>
                         with nearly 2 years of experience in Java Spring, Flask and data processing
                     </p>
                 </div>
