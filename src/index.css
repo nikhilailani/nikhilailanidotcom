@@ -1,10 +1,20 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 
 body {
-    background-color: whitesmoke;
+    background-color: #cdf0ff;
+}
+
+.tag_line {
+    font-size: x-large;
+    font-family: 'VT323';
+}
+
+.profile_pic {
+    border-radius: 200px;
 }
 
 .button_slide {
@@ -54,7 +64,7 @@ body {
     display: inline-block;
     width: 20px;
     height: 0.8em;
-    background-color: #3c6e71;
+    background-color: #004764;
     margin-left: 5px;
     animation: blink 1s step-start infinite;
 }
@@ -63,4 +73,28 @@ body {
     50% {
         opacity: 0;
     }
+}
+
+.bg-repeat {
+    background-image: url('./assets/bg.svg');
+    background-repeat: repeat;
+}
+
+.image-mask {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-mask img {
+    width: 100%;
+    height: auto;
+    -webkit-mask-image: url('path-to-your-mask.png'); /* Path to your PNG mask */
+    mask-image: url('path-to-your-mask.png'); /* Path to your PNG mask */
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
 }

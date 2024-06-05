@@ -1,6 +1,5 @@
 import React from 'react'
 import { styles } from '../styling'
-import experince from '../assets/experience.svg'
 
 export default function Section3() {
     return (
@@ -16,9 +15,6 @@ export default function Section3() {
                 </div>
             </div>
             <div className={`right md:w-[50%] w-full flex items-center `}>
-                <div className={`innerLeft ${styles.innerCont} grid items-center p-10`}>
-                    <img src={experince} alt="" className='w-full h-full' />
-                </div>
             </div>
 
         </div>
