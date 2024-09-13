@@ -11,12 +11,12 @@ export default function Home() {
     <Container id="home">
       <div className="flex flex-wrap">
 
-        <div className="w-full lg:w-9/12 px-2" id="left">
+        <div className="w-full lg:w-9/12 px-2 lg:pr-0" id="left">
           <Profile />
           <Education />
         </div>
 
-        <div className="w-full lg:w-3/12 mt-2 lg:mt-0 pr-2" id="right">
+        <div className="w-full lg:w-3/12 lg:mt-0 px-2" id="right">
           <Skills />
           <Certificates />
         </div>
