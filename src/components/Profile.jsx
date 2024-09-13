@@ -7,7 +7,7 @@ export default function Profile() {
     return (
         <div className="grid gap-2 grid-cols-1 lg:grid-cols-[1fr_0.5fr] items-start mb-2">
 
-            <div className="flex flex-col bg-bento2 p-6 h-full rounded-[15px]" style={{ backgroundImage: `url(${svgBackground})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="flex flex-col bg-bento2 p-6 h-full rounded-[15px]">
                 <h1 className="text-5xl font-bold justify-between mt-auto mb-2"> Data Analyst </h1>
                 <span className="text-2xl">
                     with nearly 2 years of experience in Java Spring, Flask and data processing
