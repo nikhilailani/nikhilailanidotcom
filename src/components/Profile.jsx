@@ -15,7 +15,7 @@ export default function Skills() {
             </div>
 
             <div className="flex flex-col bg-bento3 rounded-[15px]">
-                <img src={profileImage} alt="Nikhil Ailani" className="w-[25vw] rounded-[15px]" />
+                <img src={profileImage} alt="Nikhil Ailani" className="w-full rounded-[15px]" />
             </div>
         </div>
     );
