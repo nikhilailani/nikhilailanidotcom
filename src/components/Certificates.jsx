@@ -1,5 +1,5 @@
 import React from "react";
-import svgBackground from "../assets/design6.svg";
+import svgBackground from "../assets/design3.svg";
 
 export default function Certificates() {
     // List of skills
@@ -11,7 +11,7 @@ export default function Certificates() {
     ];
 
     return (
-        <div className="bg-bento9 p-6 rounded-[15px] text-center mb-2" style={{ backgroundImage: `url(${svgBackground})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', }}>
+        <div className="bg-bento9 p-6 rounded-[15px] text-center mb-2" style={{ backgroundImage: `url(${svgBackground})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <h1 className="text-5xl font-bold tracking-[-0.02em] mb-4">Certificates</h1>
 
             <div className="flex flex-wrap gap-2 justify-center">

@@ -11,7 +11,7 @@ export default function Skills() {
 
     return (
         <div className="bg-bento5 p-6 rounded-[15px] text-center mb-2" style={{ backgroundImage: `url(${svgBackground})`, backgroundRepeat: 'no-repeat',  backgroundSize: 'cover', backgroundPosition: 'center' }}>
-            <h1 className="text-5xl font-bold tracking-[-0.02em] mb-5
+            <h1 className="text-5xl font-bold mb-5
             "> Skills </h1>
 
             <div className="flex flex-wrap gap-2 justify-center">
