@@ -1,39 +1,33 @@
 import React from 'react';
-import { styles } from '../styling';
 import '.././index.css';
+import svgBackground1 from '../assets/design5.svg';
+import svgBackground2 from '../assets/design7.svg';
 
 export default function Education() {
     return (
-        <div className={`${styles.container} relative`}>
-            {/* innerleft container */}
-            <div className="left w-full my-0 min-h-fit flex items-center">
-                <div className={`innerLeft mt-16 ${styles.innerCont} relative z-50`}>
-                    <h1 className={`${styles.h1}`}>Master of Science</h1>
-                    <h2 className='text-3xl font-bold text-center md:text-left'>Computer Science</h2>
-                    <h3 className='text-xl text-center md:text-left'> Lakehead University, May 2024 </h3>
-                    <br/>
-                    <p>
-                        Studied Artificial Intelligence, Natural Language Processing, Deep Learning, Optimization Methods, and Machine Learning.
-                    </p>
-                    <p>
-                        Capstone Project: Developed a Job Recommendation System using Knowledge Graphs.
-                    </p>
-                </div>
+        <div className="grid gap-2 grid-cols-1 lg:grid-cols-[0.8fr_1fr] items-start mb-2">
+
+            {/* Masters Section */}
+            <div className="flex flex-col bg-bento7 p-6 h-full rounded-[15px]" style={{ backgroundImage: `url(${svgBackground1})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <h1 className="text-4xl font-bold justify-between mt-auto mb-2"> Master of Science </h1>
+                <h2 className="text-2xl font-bold justify-between mt-auto mb-2"> Computer Science </h2>
+                <h3 className="text-lg justify-between mt-auto mb-2"> Lakehead University, May 2024 </h3>
+                <span className="text-2xl tracking-[-0.02em]">
+                    Studied Artificial Intelligence, Natural Language Processing, Deep Learning, Optimization Methods, and Machine Learning.
+                    Capstone Project: Developed a Job Recommendation System using Knowledge Graphs.
+                </span>
             </div>
-            {/* innerleft container */}
-            <div className="right w-full my-0 min-h-fit flex items-center">
-                <div className={`innerRight mt-16 ${styles.innerCont} relative z-50`}>
-                    <h1 className={`${styles.h1}`}>Bachelor of Technology</h1>
-                    <h2 className='text-3xl font-bold text-center md:text-left'>Computer Engineering</h2>
-                    <h3 className='text-xl text-center md:text-left'>
-                        Dharmsinh Desai University, April 2021
-                    </h3>
-                    <br/>
-                    <p>
-                        Completed a comprehensive curriculum covering Machine Learning, Big Data, Deep Learning, Artificial Intelligence, Object-Oriented Programming in Java, ASP.NET, Data Structures and Algorithms, Natural Language Processing, Operating Systems, and advanced Mathematics.
-                    </p>
-                </div>
+
+            {/* Bachelors Section */}
+            <div className="flex flex-col bg-bento3 p-6 h-full rounded-[15px]" style={{ backgroundImage: `url(${svgBackground2})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <h1 className="text-4xl font-bold justify-between mt-auto mb-2"> Bachelor of Technology </h1>
+                <h2 className="text-2xl font-bold justify-between mt-auto mb-2"> Computer Engineering </h2>
+                <h3 className="text-lg justify-between mt-auto mb-2"> Dharmsinh Desai University, April 2021 </h3>
+                <span className="text-2xl tracking-[-0.02em] ">
+                    Completed a comprehensive curriculum covering Machine Learning, Big Data, Deep Learning, Artificial Intelligence, Object-Oriented Programming in Java, ASP.NET, Data Structures and Algorithms, Natural Language Processing, Operating Systems, and advanced Mathematics.
+                </span>
             </div>
+
         </div>
     );
 }
