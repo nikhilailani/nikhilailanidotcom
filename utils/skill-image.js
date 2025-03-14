@@ -181,7 +181,7 @@ export const skillsImage = (skill) => {
       return gimp;
     case 'git':
       return git;
-    case 'graphql':
+    case 'graph ql':
       return graphql;
     case 'lightroom':
       return lightroom;
