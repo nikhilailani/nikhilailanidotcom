@@ -17,3 +17,4 @@ export const experiences = [
     company: "AtliQ Technologies Pvt Ltd.",
     duration: "December 2020 - April 2021"
   }
+]
