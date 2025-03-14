@@ -10,10 +10,10 @@ import "./css/globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio of Abu Said - Software Developer",
+  title: "Portfolio of Nikhil Ailani - Software Developer",
   description:
-    "This is the portfolio of Abu Said. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
-};
+    "Hey, I’m Nikhil Ailani, a tech-driven problem solver with a Master’s in Computer Science from Lakehead University. I have a passion for software development, automation, and system optimization, with hands-on experience managing event and accommodation services through technology. I thrive at the intersection of innovation and efficiency, building solutions that streamline workflows and enhance user experiences. Whether it’s web development, data management, or API integrations, I bring a structured yet creative approach to solving complex challenges. Currently, I’m actively seeking an IT role where I can apply my skills in software development, backend systems, and automation to make a real impact. Let’s connect and build something amazing!"
+  };
 
 export default function RootLayout({ children }) {
   return (
